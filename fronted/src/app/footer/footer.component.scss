@@ -1,0 +1,15 @@
+.footer {
+    margin-top: auto;
+    background-color: #080808;
+
+    &__content {
+        padding: 75px 0;
+        max-width: 680px;
+        margin: 0 auto;
+
+        p {
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
