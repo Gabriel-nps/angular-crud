@@ -1,0 +1,46 @@
+<div class="container">
+  @if (post) {
+  <app-post
+    class="post-full"
+    [postId]="post.id"
+    [imagePath]="post.imagePath"
+    [title]="post.title"
+    [views]="post.views"
+    [full]="true"
+  />
+  }
+  
+  <mat-card class="comment-card" appearance="outlined">
+    <mat-card-content>
+        @if (comments.length > 0) {
+            <h2>Comentarios: {{comments.length}}</h2>
+        } @else {
+            <p> Ainda não há nenhum comentário. Adicione um para começar a conversa.</p>
+        }
+        
+        <div class="comment-wrapper">
+            @for (comment of comments; track comment.id) {
+            <div class="comment">
+                <mat-icon>account_circle</mat-icon>
+                <div>
+                    <strong>{{comment.username}}</strong>
+                    {{comment.text}}
+                </div>
+            </div>
+        }
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <mat-form-field class="input">
+            <mat-label>Adicionar comentário</mat-label>
+            <input matInput disabled type="text">
+            <!-- @if (value) {
+              <button matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                <mat-icon>close</mat-icon>
+              </button>
+            } -->
+          </mat-form-field>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

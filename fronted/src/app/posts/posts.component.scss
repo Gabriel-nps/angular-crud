@@ -1,0 +1,23 @@
+ul {
+    margin: 0 auto;
+    padding: 64px 0;
+    max-width: 1260px;
+    list-style: none;
+    
+    display: grid;
+    grid-gap: 10px;
+    row-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr) ) ;
+    justify-items: center;
+
+    li {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+
+        app-post {
+            display: flex;
+            height: 100%;
+        }
+    }
+}

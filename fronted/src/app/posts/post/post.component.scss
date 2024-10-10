@@ -1,0 +1,38 @@
+.card {
+  color: #6e7f80;
+
+  &__image {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  &__footer{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    width: 100%;
+    
+    &--view {
+      display: flex;
+      align-items: center;
+
+      mat-icon {
+        margin-right: 8px;
+      }
+    }
+
+    &--comment {
+      display: flex;
+      align-items: center;
+
+      mat-icon {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .mat-mdc-card-content {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.post-full {
+    display: block;
+    max-width: 320px;
+}
+.comment-card {
+    min-width: 320px;
+    max-width: 340px;
+    margin-left: -5px;
+    border-radius: 0;
+
+    color: #222;
+
+    h2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .comment-wrapper {
+        margin-top: 24px;
+    }
+    .comment {
+        display: flex;
+        align-items: flex-start;
+        mat-icon {
+            min-width: 24px;
+            margin-right: 12px;
+        }
+        div {
+            margin-top: 3px;
+        }
+    }
+
+    .comment + .comment {
+        margin-top: 10px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .mat-mdc-card-actions {
+        margin-top: auto;
+    }
+
+
+}

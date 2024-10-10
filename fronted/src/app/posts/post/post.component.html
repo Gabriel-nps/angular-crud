@@ -1,0 +1,29 @@
+<mat-card class="card" appearance="outlined">
+  <img
+    class="card__image"
+    mat-card-image
+    [src]="imagePath"
+    alt=""
+  />
+  <mat-card-content>
+    <p>
+      {{ title }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="card__footer">
+      <div class="card__footer--view">
+        <mat-icon>remove_red_eye</mat-icon>
+        {{ views }} Visualizações
+      </div>
+      @if (!full) {
+        <div class="card__footer--comment">
+          <a [routerLink]="['posts/',  postId]" mat-button extended> 
+            Comentarios
+            <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      }
+    </div>
+  </mat-card-actions>
+</mat-card>
