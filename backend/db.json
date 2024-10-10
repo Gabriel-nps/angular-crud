@@ -1,11 +1,17 @@
 {
     "posts": [
-      { "id": "1", "title": "a title", "views": 100 },
-      { "id": "2", "title": "another title", "views": 200 }
+      { "id": "1", "title": "Um cão pequeno e ágil que lida muito bem com terreno montanhoso, o Shiba Inu foi originalmente criado para caça.", "views": 100, "imagePath": "https://images.dog.ceo/breeds/akita/Akita_hiking_in_Shpella_e_Pellumbasit.jpg"},
+      { "id": "2", "title": "A catarata Háifoss situa-se perto do vulcão Hekla, no sul da Islândia.", "views": 200, "imagePath": "https://i.pinimg.com/236x/2d/e8/14/2de81403fc8824a347767b5f5632650a.jpg"},
+      { "id": "3", "title": "Dica de livro: Clean Code: A Handbook of Agile Software Craftsmanship.", "views": 120, "imagePath": "https://plus.unsplash.com/premium_photo-1677187301660-5e557d9c0724?q=80&w=2200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
     ],
     "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+      { "id": "1", "text": "Cachorros são os melhores amigos que alguém pode ter! 🐾", "username": "Sofia", "postId": "1" },
+      { "id": "2", "text": "Sempre pronto para a próxima aventura, meu cachorro é meu parceiro ideal! ", "username": "Lucas", "postId": "1" },
+      { "id": "3", "text": "A felicidade de um cachorro ao ver você é contagiante! 😄 ", "username": "Rafael", "postId": "1" },
+      { "id": "4", "text": "Nada como um abraço de cachorro para alegrar o dia! 🐶 ", "username": "Júlia", "postId": "1" },
+      { "id": "5", "text": "Dica: The Pragmatic Programmer: Your Journey to Mastery", "username": "Sofia", "postId": "3" },
+      { "id": "6", "text": "Dica: Automate the Boring Stuff with Python", "username": "Lucas", "postId": "3" },
+      { "id": "7", "text": "Design Patterns: Elements of Reusable Object-Oriented Software", "username": "Rafael", "postId": "3" }
     ],
     "profile": {
       "name": "typicode"
