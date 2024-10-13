@@ -37,7 +37,6 @@ export class PostsService {
         })
       )
       .subscribe(posts => {
-        console.log(posts);
         this.loadedPosts = posts;
       });
   }
@@ -61,7 +60,6 @@ export class PostsService {
         })
       )
       .subscribe(comments => {
-        console.log(comments);
         this.loadedComments = comments;
       });
   }

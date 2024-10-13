@@ -1,0 +1,23 @@
+<mat-form-field appearance="fill" class="field">
+  <mat-label>Pesquisar posts</mat-label>
+  <input matInput [formControl]="myControl" [matAutocomplete]="auto" />
+  <mat-error *ngIf="myControl.hasError('minlength') && !myControl.pristine">
+    Digite pelo menos 3 caracteres
+  </mat-error>
+  @if (myControl.value) {
+  <button matSuffix mat-icon-button aria-label="Clear" (click)="onClear()">
+    <mat-icon>close</mat-icon>
+  </button>
+  }
+  <mat-autocomplete
+    #auto="matAutocomplete"
+    (optionSelected)="onSelect($event)"
+  >
+    <mat-option
+      *ngFor="let option of filteredOptions | async"
+      [value]="option.title"
+    >
+      {{ option.title }}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
